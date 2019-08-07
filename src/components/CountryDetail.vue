@@ -3,6 +3,7 @@
 <h3>Name: {{country.name}}</h3>
 <p>Capital: {{country.capital}}</p>
 <p>population: {{country.population}}</p>
+<p>Language: {{country.languages.name}}</p>
   </div>
 </template>
 

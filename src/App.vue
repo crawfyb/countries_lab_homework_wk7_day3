@@ -7,6 +7,9 @@
   			<option v-for="country in countries" :value="country">{{country.name}}</option>
   		</select>
 
+      <img v-if="selectedCountry" :src="selectedCountry.flag" alt="country flag">
+
+
       <country-detail :country='selectedCountry'></country-detail>
 
     </div>
