@@ -2,8 +2,13 @@
   <div>
     <h1>Countries</h1>
     <div class="main-container">
-      <countries-list :countries='countries'></countries-list>
+      <select id="country_select" v-model="selectedCountry">
+  			<option disabled value="">Select a country</option>
+  			<option v-for="country in countries" :value="country">{{country.name}}</option>
+  		</select>
+
       <country-detail :country='selectedCountry'></country-detail>
+
     </div>
   </div>
 
